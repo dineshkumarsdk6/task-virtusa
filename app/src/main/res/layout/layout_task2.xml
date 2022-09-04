@@ -33,7 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/appColor"
                 app:cardCornerRadius="10dp">
 
                 <TextView
@@ -42,8 +41,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="10dp"
+                    android:background="@color/white"
                     android:text="Get Email 1"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             </androidx.cardview.widget.CardView>
 
@@ -51,7 +51,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/appColor"
                 app:cardCornerRadius="10dp">
 
                 <TextView
@@ -60,8 +59,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="10dp"
+                    android:background="@color/white"
                     android:text="Get Email 2"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             </androidx.cardview.widget.CardView>
 
@@ -69,7 +69,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/appColor"
                 app:cardCornerRadius="10dp">
 
                 <TextView
@@ -78,8 +77,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="10dp"
+                    android:background="@color/white"
                     android:text="Get Email 3"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
 
             </androidx.cardview.widget.CardView>
 
@@ -89,7 +89,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:visibility="visible"
-                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -118,7 +117,7 @@
                         android:linksClickable="true"
                         android:autoLink="all"
                         android:textColorLink="#3F51B5"
-                        android:text="Output"
+                        android:text="-"
                         android:textColor="@color/black" />
 
 

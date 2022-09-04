@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.task.virtusa.R
 import com.task.virtusa.databinding.LayoutLoadingBinding
 import com.task.virtusa.databinding.LayoutTask2Binding
 import com.task.virtusa.mvvm.MainViewModel
@@ -38,6 +39,12 @@ class ActivityTask2 : AppCompatActivity() {
         }
 
         binding.textEmail1.setOnClickListener {
+            binding.textEmail1.setBackgroundColor(Color.parseColor("#3F51B5"))
+            binding.textEmail1.setTextColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail2.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail2.setTextColor(Color.parseColor("#000000"))
+            binding.textEmail3.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail3.setTextColor(Color.parseColor("#000000"))
             if (checkNetworkAvailable(this@ActivityTask2)) {
                 viewModel.getData("1")
             } else {
@@ -46,6 +53,12 @@ class ActivityTask2 : AppCompatActivity() {
         }
 
         binding.textEmail2.setOnClickListener {
+            binding.textEmail1.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail1.setTextColor(Color.parseColor("#000000"))
+            binding.textEmail2.setBackgroundColor(Color.parseColor("#3F51B5"))
+            binding.textEmail2.setTextColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail3.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail3.setTextColor(Color.parseColor("#000000"))
             if (checkNetworkAvailable(this@ActivityTask2)) {
                 viewModel.getData("3")
             } else {
@@ -54,6 +67,12 @@ class ActivityTask2 : AppCompatActivity() {
         }
 
         binding.textEmail3.setOnClickListener {
+            binding.textEmail1.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail1.setTextColor(Color.parseColor("#000000"))
+            binding.textEmail2.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            binding.textEmail2.setTextColor(Color.parseColor("#000000"))
+            binding.textEmail3.setBackgroundColor(Color.parseColor("#3F51B5"))
+            binding.textEmail3.setTextColor(Color.parseColor("#FFFFFF"))
             if (checkNetworkAvailable(this@ActivityTask2)) {
                 viewModel.getData("10")
             } else {

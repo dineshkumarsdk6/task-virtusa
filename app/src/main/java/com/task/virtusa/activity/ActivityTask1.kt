@@ -47,7 +47,7 @@ class ActivityTask1 : AppCompatActivity() {
         for (i in input1) {
             var flag = 0
             for (j in input2) {
-                if (i == j) {
+                if (i.lowercaseChar() == j.lowercaseChar()) {
                     flag = 1
                 }
             }
@@ -57,17 +57,17 @@ class ActivityTask1 : AppCompatActivity() {
     }
 
     private fun getOutput2(input1: String, input2: String): String {
-        val ans = StringBuffer()
+        val output = StringBuffer()
         for (i in input2) {
             var flag = 0
             for (j in input1) {
-                if (i == j) {
+                if (i.lowercaseChar() == j.lowercaseChar()) {
                     flag = 1
                 }
             }
-            if (flag != 1) ans.append(i)
+            if (flag != 1) output.append(i)
         }
-        return ans.toString()
+        return output.toString()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
