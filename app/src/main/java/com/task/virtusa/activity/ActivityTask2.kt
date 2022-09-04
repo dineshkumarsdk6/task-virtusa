@@ -14,7 +14,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.task.virtusa.R
 import com.task.virtusa.databinding.LayoutLoadingBinding
 import com.task.virtusa.databinding.LayoutTask2Binding
 import com.task.virtusa.mvvm.MainViewModel
