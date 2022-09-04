@@ -1,4 +1,3 @@
-# task-virtusa
 Android task by virtusa
 
 1. 
