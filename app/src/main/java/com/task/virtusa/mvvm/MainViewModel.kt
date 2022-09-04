@@ -9,16 +9,10 @@ import com.task.virtusa.retrofit.RetrofitInstance
 import kotlinx.coroutines.*
 
 class MainViewModel : ViewModel() {
-
     val getData = MutableLiveData<GetData>()
     var loading = MutableLiveData<Boolean>()
     val error = MutableLiveData<String>()
     var job: Job? = null
-
-    override fun onCleared() {
-        super.onCleared()
-        job?.cancel()
-    }
 
     fun getData(id : String) {
         loading.value = true
@@ -40,5 +34,10 @@ class MainViewModel : ViewModel() {
                 }
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        job?.cancel()
     }
 }

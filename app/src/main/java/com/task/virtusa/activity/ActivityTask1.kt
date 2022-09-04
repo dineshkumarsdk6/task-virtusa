@@ -1,6 +1,5 @@
 package com.task.virtusa.activity
 
-import android.content.Context
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -8,9 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.task.virtusa.databinding.LayoutTask1Binding
 
-
 class ActivityTask1 : AppCompatActivity() {
-
     lateinit var binding: LayoutTask1Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
